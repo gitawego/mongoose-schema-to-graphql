@@ -11,7 +11,7 @@ import {
   GraphQLFloat,
   GraphQLID
 } from 'graphql';
-import GraphQLDate from 'graphql-date';
+import * as GraphQLDate from 'graphql-date';
 
 let randomName = (len) => {
   let text = '',
