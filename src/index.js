@@ -11,7 +11,7 @@ import {
   GraphQLFloat,
   GraphQLID
 } from 'graphql';
-import { GraphQLDateTime } from 'graphql-custom-types';
+import GraphQLDate from 'graphql-date';
 
 let randomName = (len) => {
   let text = '',
@@ -31,7 +31,7 @@ let mapToObject = (mainObj, prop, instance) => {
       mainObj[prop] = { type: GraphQLString };
       break;
     case 'Date':
-      mainObj[prop] = { type: GraphQLDateTime };
+      mainObj[prop] = { type: GraphQLDate };
       break;
     case 'Mixed':
       mainObj[prop] = { type: GraphQLString };
